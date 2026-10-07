@@ -1,0 +1,7 @@
+{
+  "name": "Dyson Sphere Program Engine & Spherical Grid Simulator",
+  "description": "High-performance simulation of Dyson Sphere Program's core architecture: Spherical Ring-Banded Grid with fault lines, DOD continuous memory conveyor belt engine, and interstellar logistics dispatcher.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

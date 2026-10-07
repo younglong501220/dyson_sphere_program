@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Chakra Petch', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #050811;
+  color: #c9d1d9;
+}
+
+/* Custom scrollbar for sci-fi panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 16, 30, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 139, 253, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.7);
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes tool-click-pop {
+  0% {
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.12);
+    box-shadow: 0 0 15px 4px rgba(0, 240, 255, 0.8), inset 0 0 10px rgba(0, 240, 255, 0.4);
+    border-color: #00f0ff;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0);
+  }
+}
+
+.tool-btn-clicked {
+  animation: tool-click-pop 0.32s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
